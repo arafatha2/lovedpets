@@ -1,149 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paws & Home | Pet Adoption Sanctuary</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Loved Pets • Animal Shelter</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Replace the favicon with your own if you like -->
+  <meta name="description" content="Loved Pets Animal Shelter — adopt, volunteer, donate. We rescue, vet, and match animals with loving homes." />
 </head>
 <body>
-    <header class="site-header">
-        <nav class="main-nav">
-            <a href="/" class="logo">Paws & Home</a>
-            <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#adopt">Adopt</a></li>
-                <li><a href="#donate">Donate</a></li>
-                <li><a href="#contact">Contact</a></li>
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <!-- small SVG paw icon, feel free to replace with a hand-drawn image -->
+      <svg class="paw" viewBox="0 0 64 64" aria-hidden="true"><path d="M16 6c3 0 6 4 6 8s-3 8-6 8-6-4-6-8 3-8 6-8zM48 6c3 0 6 4 6 8s-3 8-6 8-6-4-6-8 3-8 6-8zM10 28c5 0 10 6 10 12s-5 10-10 10-10-5-10-10 5-12 10-12zM54 28c5 0 10 6 10 12s-5 10-10 10-10-5-10-10 5-12 10-12zM32 26c9 0 16 8 16 18s-7 20-16 20-16-11-16-20 7-18 16-18z" fill="currentColor"/></svg>
+      <div class="brand-text">
+        <h1>Loved Pets</h1>
+        <p class="tag">Loved Pets Animal Shelter</p>
+      </div>
+    </div>
+
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#adopt">Adopt</a></li>
+        <li><a href="#volunteer">Volunteer</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO: replace hero.jpg with your photo in images/ -->
+    <section id="home" class="hero">
+      <div class="hero-photo" role="img" aria-label="Photo of shelter or pets" style="background-image: url('images/hero.jpg');">
+        <!-- If you want to use an <img>, swap the background styles and use <img src="images/hero.jpg" alt="..."> -->
+      </div>
+      <div class="hero-content">
+        <h2>Every tail deserves a home.</h2>
+        <p>We rescue, vet, and match animals with loving families. Small-town warmth, big-hearted care.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#adopt">See Adoptable Pets</a>
+          <a class="btn outline" href="#volunteer">Volunteer With Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="about-inner">
+        <div class="about-text">
+          <h3>Our philosophy</h3>
+          <p>
+            At <strong>Loved Pets Animal Rescue</strong>, we believe all animals deserve a chance to find a loving forever home.
+            We provide initial veterinary care to rescued animals, then work to match each animal with a human family to love
+            them and keep them safe forever. All animals are screened for diseases upon arrival, washed and groomed, and then
+            added to our website for adoptive families to see. Potential adopters are screened for adoption history, household
+            lifestyle, and long-term commitment to care.
+          </p>
+          <p>
+            We can always use volunteers! Volunteers help bathe & groom animals, socialize pets, clean, and assist with
+            administrative tasks. If you’re interested, follow the steps in our volunteer section.
+          </p>
+        </div>
+        <div class="about-facts">
+          <h4>Factsheet</h4>
+          <address class="facts">
+            <strong>Loved Pets Animal Shelter</strong><br />
+            6645 Watergrass Cir.<br />
+            Springfield, Arizona 11645<br />
+            <a href="tel:+15554762984">(555) 476-2984</a><br />
+            <a href="mailto:josie@welovepets.com">josie@welovepets.com</a>
+          </address>
+
+          <div class="hours">
+            <h5>Hours</h5>
+            <ul>
+              <li>Monday: 8am – 5pm</li>
+              <li>Tuesday: 8am – 5pm</li>
+              <li>Wednesday: 8am – 8pm</li>
+              <li>Thursday: 8am – 5pm</li>
+              <li>Friday: 8am – 12pm</li>
+              <li>Saturday: 8am – 12pm</li>
+              <li>Sunday: Closed</li>
             </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            <!-- Replace with your own shelter photo -->
-            <div class="hero-image">
-                <img src="http://static.photos/nature/1200x630/33" alt="Happy dogs at our shelter">
-            </div>
-            <div class="hero-content">
-                <h1>Every pet deserves a loving home</h1>
-                <p>We're more than a shelter—we're matchmakers for lifelong friendships</p>
-                <a href="#adopt" class="button primary">Meet our pets</a>
-            </div>
-        </section>
-
-        <section id="adopt" class="pet-grid">
-            <h2>Our adoptable friends</h2>
-            <p class="section-subtitle">Take your time getting to know them</p>
-            
-            <div class="pets-container">
-                <!-- PET CARD 1 -->
-                <article class="pet-card">
-                    <div class="pet-image">
-                        <!-- Replace with actual pet photo -->
-                        <img src="http://static.photos/animals/640x360/12" alt="Buddy the dog">
-                    </div>
-                    <div class="pet-details">
-                        <h3>Buddy</h3>
-                        <p class="pet-age">3 years old · Labrador mix</p>
-                        <p class="pet-bio">Buddy was found wandering near the highway. Despite his rough start, he's the most affectionate boy who loves belly rubs and long naps in sunny spots.</p>
-                    </div>
-                </article>
-
-                <!-- PET CARD 2 -->
-                <article class="pet-card">
-                    <div class="pet-image">
-                        <!-- Replace with actual pet photo -->
-                        <img src="http://static.photos/animals/640x360/18" alt="Misty the cat">
-                    </div>
-                    <div class="pet-details">
-                        <h3>Misty</h3>
-                        <p class="pet-age">5 years old · Domestic shorthair</p>
-                        <p class="pet-bio">Misty was surrendered when her owner moved overseas. She's a gentle soul who enjoys quiet evenings and watching birds from the window.</p>
-                    </div>
-                </article>
-
-                <!-- PET CARD 3 -->
-                <article class="pet-card">
-                    <div class="pet-image">
-                        <!-- Replace with actual pet photo -->
-                        <img src="http://static.photos/animals/640x360/25" alt="Daisy the rabbit">
-                    </div>
-                    <div class="pet-details">
-                        <h3>Daisy</h3>
-                        <p class="pet-age">2 years old · Rex rabbit</p>
-                        <p class="pet-bio">Daisy was part of an accidental litter. She's curious, loves kale, and will happily hop around your feet while you work from home.</p>
-                    </div>
-                </article>
-
-                <!-- PET CARD 4 -->
-                <article class="pet-card">
-                    <div class="pet-image">
-                        <!-- Replace with actual pet photo -->
-                        <img src="http://static.photos/animals/640x360/41" alt="Rocky the dog">
-                    </div>
-                    <div class="pet-details">
-                        <h3>Rocky</h3>
-                        <p class="pet-age">8 years old · Boxer</p>
-                        <p class="pet-bio">Senior dogs have so much love to give! Rocky is house-trained, knows basic commands, and just wants to be someone's faithful companion.</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section id="about" class="about-section">
-            <div class="about-content">
-                <h2>Our story</h2>
-                <p>Paws & Home began in 2015 when our founder noticed how many pets were overlooked at traditional shelters. We're different—we take time to understand both animals and adopters, creating matches that last.</p>
-                <p>Our cozy shelter feels more like a home, where animals get personalized care while they wait for their forever families. We don't believe in cages or time limits—just patience and proper matches.</p>
-                <p>All our pets are spayed/neutered, vaccinated, and microchipped before adoption. We also offer post-adoption support because every transition needs a helping hand.</p>
-            </div>
-            <div class="about-image">
-                <!-- Replace with your own photo -->
-                <img src="http://static.photos/people/640x360/15" alt="Our shelter team">
-            </div>
-        </section>
-
-        <section id="donate" class="cta-section">
-            <div class="cta-content">
-                <h2>Can't adopt? You can still help</h2>
-                <p>Even small donations provide food, medical care, and cozy bedding for animals in need. We're a 501(c)(3) nonprofit—every dollar makes a difference.</p>
-                <a href="#contact" class="button secondary">Support our shelter</a>
-            </div>
-        </section>
-    </main>
-
-    <footer id="contact" class="site-footer">
-        <div class="footer-content">
-            <div class="footer-contact">
-                <h3>Visit us</h3>
-                <address>
-                    1234 Willow Lane<br>
-                    Greenwood, CA 90210<br>
-                    <a href="mailto:hello@pawsandhome.org">hello@pawsandhome.org</a><br>
-                    (555) 123-4567
-                </address>
-            </div>
-            <div class="footer-hours">
-                <h3>Open hours</h3>
-                <p>Tuesday - Friday: 11am - 6pm</p>
-                <p>Saturday - Sunday: 10am - 4pm</p>
-                <p>Mondays: Closed</p>
-            </div>
-            <div class="footer-social">
-                <h3>Follow along</h3>
-                <div class="social-links">
-                    <a href="#">Instagram</a>
-                    <a href="#">Facebook</a>
-                    <a href="#">Twitter</a>
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2023 Paws & Home. All rights reserved.</p>
+      </div>
+    </section>
+
+    <!-- ADOPTABLE PETS GRID -->
+    <section id="adopt" class="adopt">
+      <h3 class="section-title">Adoptable Pets</h3>
+      <p class="section-intro">Click a pet card and replace the images + text with your own pet photos and descriptions.</p>
+
+      <div class="pet-grid">
+        <!-- Repeat .pet-card for each pet you want to show. Replace images/pet1.jpg etc with your photos -->
+        <article class="pet-card" aria-labelledby="pet1-name">
+          <div class="pet-photo" style="background-image: url('images/pet1.jpg');" role="img" aria-label="Photo of Bella the dog"></div>
+          <div class="pet-info">
+            <h4 id="pet1-name">Bella</h4>
+            <p class="meta">2 years • Female • Dog</p>
+            <p class="story">Friendly and playful—Bella loves fetch and slow afternoon walks. Great with kids and other dogs.</p>
+            <a class="btn small" href="#contact">Request Adoption</a>
+          </div>
+        </article>
+
+        <article class="pet-card" aria-labelledby="pet2-name">
+          <div class="pet-photo" style="background-image: url('images/pet2.jpg');" role="img" aria-label="Photo of Mr. Whiskers the cat"></div>
+          <div class="pet-info">
+            <h4 id="pet2-name">Mr. Whiskers</h4>
+            <p class="meta">4 years • Male • Cat</p>
+            <p class="story">Calm and affectionate—prefers quiet laps and sunny window sills. House-trained.</p>
+            <a class="btn small" href="#contact">Request Adoption</a>
+          </div>
+        </article>
+
+        <article class="pet-card" aria-labelledby="pet3-name">
+          <div class="pet-photo" style="background-image: url('images/pet3.jpg');" role="img" aria-label="Photo of Luna"></div>
+          <div class="pet-info">
+            <h4 id="pet3-name">Luna</h4>
+            <p class="meta">6 months • Female • Rabbit</p>
+            <p class="story">Curious and sweet—Luna is learning to hop and loves gentle petting and treats.</p>
+            <a class="btn small" href="#contact">Request Adoption</a>
+          </div>
+        </article>
+
+        <!-- Add more pet-card sections as needed. -->
+      </div>
+    </section>
+
+    <!-- VOLUNTEER -->
+    <section id="volunteer" class="volunteer">
+      <div class="volunteer-inner">
+        <h3>How to become a volunteer</h3>
+        <ol>
+          <li>Complete the online application (save it as <em>volunteer-form.pdf</em> in your folder).</li>
+          <li>Submit the application by emailing it to <a href="mailto:volunteer@welovepets.com">volunteer@welovepets.com</a>.</li>
+          <li>Participate in a brief phone interview.</li>
+          <li>Attend a volunteer training session on the first Saturday of every month.</li>
+        </ol>
+        <p class="vol-cta">We're grateful for every hour you can give — volunteers make everything possible.</p>
+      </div>
+      <aside class="donate-box" aria-labelledby="donate-title">
+        <h4 id="donate-title">Support our work</h4>
+        <p>Your donations pay for vaccinations, spay/neuter procedures, food, and kennel care. No amount is too small.</p>
+        <a class="btn primary" href="#contact">Donate / Learn More</a>
+      </aside>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <h3>Contact & Visit</h3>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><strong>Address</strong><br/>6645 Watergrass Cir., Springfield, Arizona 11645</p>
+          <p><strong>Phone</strong><br/><a href="tel:+15554762984">(555) 476-2984</a></p>
+          <p><strong>Email</strong><br/><a href="mailto:josie@welovepets.com">josie@welovepets.com</a></p>
         </div>
-    </footer>
+
+        <form class="contact-form" action="#" method="post" aria-label="Contact form">
+          <!-- Note: the form is non-functional without a server. Replace action with your endpoint or use mailto if needed. -->
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Your email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required placeholder="I’m interested in adopting Bella..."></textarea>
+
+          <button class="btn primary" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> Loved Pets Animal Shelter — All rights reserved.</p>
+      <div class="footer-meta">
+        <p>Volunteer & adoption inquiries: <a href="mailto:volunteer@welovepets.com">volunteer@welovepets.com</a></p>
+        <p>Follow us:
+          <!-- Replace # with real social links -->
+          <a href="#" aria-label="Instagram">IG</a> · <a href="#" aria-label="Facebook">FB</a> · <a href="#" aria-label="X/Twitter">X</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Small inline script only to set year (no UI logic) -->
+  <script>
+    // safe, tiny helper to keep copyright year current
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
